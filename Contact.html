@@ -7,6 +7,9 @@
     <title>Rainy Days</title>
     <link rel="stylesheet" href="RainyDays.css">
     <script src="https://kit.fontawesome.com/b318972c4d.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,7 +18,7 @@
         <label for="check" class="checkbutton">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">Rainy Days</label>
+        <label class="logo">RainyDays</label>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Shop.html">Shop</a></li>
@@ -24,9 +27,26 @@
         </ul>    
     </nav>
 </header>
-<main>
-    <div class="logorainydays">
-        <img src="/images/RainyDays_Logo.png" alt="" /> 
+<main class="contactMain">
+    <div class="contact__container">
+        <form action="action__page.php">
+
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter email here">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Short description">
+            
+            <label for="yourmessage">Your Message</label>
+            <input type="text" id="yourmessage" name="yourmessage" placeholder="Enter message here" style="height: 200px">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="contactrainydays"> 
     </div>
 </main>
     <section></section>
