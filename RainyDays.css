@@ -7,17 +7,44 @@
 }
 
 body {
-    font-family: montserrat;
+    font-family: 'montserrat', 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.indexMain {
     background: url("images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png") no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
+.shopMain {
+    background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png" ) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.contactMain {
+    background: url("/images/photo-1566116386886-46622124e514.webp") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.aboutMain {
+    background: url("/images/photo-1533243216203-8c08406d4583.webp") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 nav {
+    position: absolute;
     background: #0A3641;
     height: 80px;
     width: 100%;
+    z-index: 10;
 }
 
 label.logo {
@@ -76,7 +103,7 @@ a.active, a:hover {
 .logorainydays img {
     max-width: 420px;
     width: 85%;
-    margin-top: 20px;
+    margin-top: 130px;
     }
 
     /* .active {
@@ -84,7 +111,7 @@ a.active, a:hover {
     } */
 
 .logo__text {
-    font-family: 'montserrat', 'Courier New', Courier, monospace;
+    /* font-family: 'montserrat', 'Courier New', Courier, monospace; */
     font-size: 25px;
     margin: 50px auto;
     width: auto;
@@ -92,11 +119,19 @@ a.active, a:hover {
     color: white;
 }
 
+.text {
+    text-align: center;
+}
+
 h1, h2 {
     /* display: block; */
     min-width: 200px;
     margin: 0px auto;
     text-align: center;
+}
+
+a {
+    color: white;
 }
 
 .buttonFlex {
@@ -107,12 +142,11 @@ h1, h2 {
 .cta {
     display: inline-block;
     background: #0A3641;
-    color: #fff;
     text-align: center;
     font-weight: bold;
     font-size: 190%;
     line-height: 80px;
-    font-family: montserrat, courier 'Courier New', Courier, monospace;
+    /* font-family: montserrat, courier 'Courier New', Courier, monospace; */
     border-radius: 12px;
     margin: auto;
     width: 200px;
@@ -170,4 +204,105 @@ h1, h2 {
     width: 10rem;
     font-size: 1.9rem;
     }
+
+    label.logo {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    width: 100px;    
     }
+    }
+
+@media (max-width: 450px) {
+    .cta {
+        width: 7.5rem;
+        height: 5rem;
+        font-size: 1.2rem;
+
+    }
+}
+
+@media (max-width: 360px) {
+    label.logo {
+        font-size: 1.3rem;
+        padding-left: 1.5rem;
+    }
+    
+    .cta {
+        width: 5rem;
+        height: 3rem;
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* SHOP */
+
+.textFlex {
+    display: inline-block;
+
+}
+
+.imageContainer > img {    
+    height: 100px;
+}
+
+.JacketImageContainer {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    border: solid red 2px;
+    width: 80%;
+}
+
+/* Contact Page, https://www.w3schools.com/howto/howto_css_contact_form.asp */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom:  16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #157790;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #146478;
+}
+
+.contact__container {
+    border-radius: 5px;
+    padding: 5rem;
+    margin-top: 120px;
+    position: absolute;
+    right: 0;
+    max-width: 600px;
+}
+
+/* .contactrainydays {
+    background-image: url("images/photo-1566116386886-46622124e514.webp");
+    height: 92.1%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+} */
+
+
+
