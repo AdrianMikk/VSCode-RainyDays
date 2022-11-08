@@ -4,58 +4,65 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: "montserrat", "Courier New", Courier, monospace;
+}
+
+:root {
+  --logo-blue: #0a3641;
 }
 
 body {
-  font-family: "montserrat", "Courier New", Courier, monospace;
   font-weight: bold;
 }
 
 .indexMain {
-  background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png)
-    no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-.shopMain {
-  background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png)
-    no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.contactMain {
-  background: url("/images/photo-1566116386886-46622124e514.webp") no-repeat;
+  background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  /* filter: blur(px); */
+}
+
+.shopMain {
+  background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.contactMain {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/photo-1566116386886-46622124e514.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .aboutMain {
-  background: url("/images/photo-1533243216203-8c08406d4583.webp") no-repeat;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/photo-1533243216203-8c08406d4583.webp");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  /* filter: blur(px); */
+  padding-bottom: 3rem;
+  min-height: 100vh;
 }
 
 nav {
-  background: #0a3641;
+  background: var(--logo-blue);
   height: 80px;
   width: 100%;
   z-index: 10;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 
 label.logo {
   color: white;
   font-size: 35px;
   line-height: 80px;
-  padding: 0 100px;
   font-weight: bold;
 }
 
@@ -87,9 +94,7 @@ a:hover {
 .checkbutton {
   font-size: 30px;
   color: white;
-  float: right;
   line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
@@ -108,16 +113,6 @@ a:hover {
   max-width: 420px;
   width: 85%;
   margin-top: 130px;
-}
-
-.logorainydaysContact {
-  display: flex;
-  justify-content: center;
-}
-
-.logorainydaysContact img {
-  width: 60%;
-  margin: 20px;
 }
 
 .logo__text {
@@ -150,7 +145,7 @@ a {
 
 .cta {
   display: inline-block;
-  background: #0a3641;
+  background: var(--logo-blue);
   text-align: center;
   font-weight: bold;
   font-size: 190%;
@@ -173,15 +168,13 @@ a {
     color: #fff;
   font-size: large;
   padding: 2rem;
-  border: 1px solid black;
   height: 250px;
   width: 120px;
   display: flex;
-  /* justify-content: space-evenly; */
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px;
-  /* flex: 1; */
+  border-bottom: 1px solid white;
 }
 
 .imageContainer p {
@@ -189,7 +182,7 @@ a {
 }
 
 .shop__h1 {
-  color: #0a3641;
+  color: var(--logo-blue);
   padding-top: 4rem;
   font-size: 2.6rem;
 }
@@ -216,12 +209,10 @@ a {
   top: 20%;
   text-align: center;
   font-size: 3rem;
-  background-color: #0a3641;
   color: #fff;
 }
 
 .contact__flex {
-  margin-top: 5px;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -229,20 +220,23 @@ a {
 
 .contact {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   gap: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   opacity: 1;
   width: 100%;
-  font-family: "montserrat", "Courier New", Courier, monospace;
   padding: 1rem;
+}
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-evenly;
 }
 
 .contact__container {
   border-radius: 5px;
-  right: 0;
   width: 90%;
 }
 
@@ -253,26 +247,20 @@ a {
 .contact__form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 input[type="text"],
 select,
 textarea {
   margin: 0 auto;
-  width: 250px;
-  padding: 18px;
+  width: 100%;
+  height: 36px;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  /* margin-top: 6px; */
-  /* margin-bottom: 16px; */
   resize: vertical;
-}
-
-label {
-    display: flex;
-    justify-content: center;
-    margin-left: -160px;
 }
 
 /* @media () { */
@@ -280,7 +268,7 @@ label {
 /* } */
 
 input[type="send"] {
-  background-color: #0a3641;
+  background-color: var(--logo-blue);
   color: white;
   text-align: center;
   padding: 12px 20px;
@@ -310,7 +298,6 @@ input[type="send"]:hover {
   top: 20%;
   text-align: center;
   font-size: 3rem;
-  background-color: #0a3641;
   color: #fff;
 }
 
@@ -320,9 +307,17 @@ input[type="send"]:hover {
   opacity: 1;
   width: 670px;
   height: 200px;
-  margin: 8rem auto;
+  padding: 1rem;
   font-size: x-large;
-  font-family: "montserrat", "Courier New", Courier, monospace;
+}
+
+.about__text {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 /*Product Page*/
@@ -347,10 +342,14 @@ input[type="send"]:hover {
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
-    padding-left: 50px;
   }
   nav ul li a {
     font-size: 16px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -394,8 +393,11 @@ input[type="send"]:hover {
 
   label.logo {
     font-size: 1.5rem;
-    padding-left: 2rem;
-    width: 100px;
+  }
+
+  .about {
+    width: 90%;
+    height: auto; 
   }
 }
 
