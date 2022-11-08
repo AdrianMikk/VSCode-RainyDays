@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainy Days</title>
-    <link rel="stylesheet" href="RainyDays.css">
+    <link rel="stylesheet" href="css/RainyDays.css">
     <script src="https://kit.fontawesome.com/b318972c4d.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-    <nav>
+      <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbutton">
             <i class="fas fa-bars"></i>
@@ -25,54 +25,38 @@
             <li><a class="active" href="Contact.html">Contact</a></li>
             <li><a href="About.html">About</a></li>
         </ul>    
-    </nav>
-</header>
-
-<main class="contactMain">
-    <div
-    style="display: flex; flex-direction: column"
-    >
-    <!-- <h1 style="font-size: 6rem;">Contact Us</h1> -->
-        <section class="flexbox">
-            <div class="contacttext">
+      </nav>
+    </header>
+    <main class="contactMain">
+        <h1 class="contact__h1">Contact Us</h1>
+        <section class="contact__flex">
+            <div class="contact">
                 <p>If you have any questions or need any help, feel free to contact us by phone or email and we will be sure to get back to you as soon as possible.</p>
-            </div>
-            <div class="contact__container">
-                <form action="action__page.php">
-                    
-                    <label for="fname">Full Name</label>
-                    <input type="text" id="fname" name="fullname" placeholder="Enter full name">
-                    
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Enter email here">
-                    
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Short description">
-                    
-                    <label for="yourmessage">Your Message</label>
-                    <input type="text" id="yourmessage" name="yourmessage" placeholder="Enter message here" style="height: 200px">
-                    
-                    <input type="send" value="Send">
-                </form>
-            </div>
-            <div class="contactrainydays"> 
+                <p>Phone:+47 12 34 56 78
+                   Email: help@rainydays.post
+                </p>
+                <div class="contact__container">
+                    <form action="action__page.php" class="contact__form">
+                        
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+                        
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter email here">
+                        
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Short description">
+                        
+                        <label for="yourmessage">Your Message</label>
+                        <input type="text" id="yourmessage" name="yourmessage" placeholder="Enter message here" style="height: 200px">
+                        <input type="send" value="Send" class="contact_form__button">
+                    </form>
+                </div>
             </div>
         </section>
-        <div
-        style="position: absolute; height: 100%; width: 100%;"
-        >
-        <h1 class="contact__h1" style="position: absolute; top: 20%; text-align: center; font-size: 5rem; background-color: red; width: 100%;">Contact us</h1>
-    </div>
-    <section>
-        <div class="contact">
-            <div class="contact__p">
-                <p>If you have any questions or need any help, feel free to contact us by phone or email and we will be sure to get back to you as soon as possible.</p>
-                <p>Phone:+47 12 34 56 78<br>Email: help@rainydays.post</p>
+            <div class="contactrainydays"> 
             </div>
-        </div>
-    </section>
-</div>
-</main>
+    </main>
     <section></section>
 </body>
 </html>

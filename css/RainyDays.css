@@ -12,14 +12,14 @@ body {
 }
 
 .indexMain {
-    background: url("images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png") no-repeat;
+    background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
 .shopMain {
-    background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png" ) no-repeat;
+    background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -29,7 +29,7 @@ body {
     background: url("/images/photo-1566116386886-46622124e514.webp") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     /* filter: blur(px); */
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 nav {
-    position: absolute;
+     
     background: #0A3641;
     height: 80px;
     width: 100%;
@@ -154,6 +154,148 @@ a {
     text-align: center;
 }
 
+/* SHOP */
+
+.imageContainer {
+    font-size: large;
+    padding: 2rem;
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.imageContainer p {
+    text-align: center;
+}
+
+.shop__h1 {
+     color: #0A3641;
+    padding-top: 4rem;
+    font-size: 2.6rem;
+}
+
+.textFlex {
+    display: inline-block;
+
+}
+
+.imageContainer > img {    
+    height: 151px;
+    width: 135px;
+}
+
+.JacketImageContainer {
+     
+    left: 10%;
+    bottom: 20%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* margin: 0 auto; */
+    align-items: center;
+    /* border: solid red 2px; */
+    width: 80%;
+    color: #fff;
+}
+
+/* Contact Page, https://www.w3schools.com/howto/howto_css_contact_form.asp */
+
+.contact__h1 {
+    top: 20%; 
+    text-align: center; 
+    font-size: 3rem; 
+    background-color: #0A3641; 
+    color: #fff;
+}
+
+.contact__flex {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 1;
+    width: 100%;
+    font-family: 'montserrat', 'Courier New', Courier, monospace;
+    padding-bottom: 2rem;
+}
+
+.contact p {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom:  16px;
+    resize: vertical;
+}
+
+input[type=send] {
+    background-color: #0A3641;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 6rem;
+    align-self: center;
+}
+
+input[type=send]:hover {
+    background-color: #0C4C5C;
+}
+
+.contact__container {
+    border-radius: 5px;
+    padding: 0 3rem;
+     
+    right: 0;
+    max-width: 600px;
+}
+
+/* .contactrainydays {
+    background-image: url("images/photo-1566116386886-46622124e514.webp");
+    height: 92.1%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+} */
+
+/*About Page */
+
+.about {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 1;
+    width: 670px;
+    height: 200px;
+    margin: 8rem auto;
+    font-size: x-large;
+    font-family: 'montserrat', 'Courier New', Courier, monospace;
+}
+
 @media (max-width: 952px) {
     label.logo{
     font-size: 30px;
@@ -232,122 +374,4 @@ a {
         justify-content: center;
     }
 }
-
-/* SHOP */
-
-.imageContainer {
-    font-size: large;
-    padding: 2rem;
-    border: 1px solid black;
-    height: 300px;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-}
-
-.imageContainer p {
-    text-align: center;
-}
-
-.shop__h1 {
-     color: #0A3641;
-    padding-top: 4rem;
-    font-size: 2.6rem;
-}
-
-.textFlex {
-    display: inline-block;
-
-}
-
-.imageContainer > img {    
-    height: 151px;
-    width: 135px;
-}
-
-.JacketImageContainer {
-    position: absolute;
-    left: 10%;
-    bottom: 20%;
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
-    /* margin: 0 auto; */
-    align-items: center;
-    /* border: solid red 2px; */
-    width: 80%;
-    color: #fff;
-}
-
-/* Contact Page, https://www.w3schools.com/howto/howto_css_contact_form.asp */
-
-.contact {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    opacity: 1;
-    width: 670px;
-    height: 200px;
-    margin: 22.5rem auto;
-    font-size: x-large;
-    font-family: 'montserrat', 'Courier New', Courier, monospace;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 18px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom:  16px;
-    resize: vertical;
-}
-
-input[type=send] {
-    background-color: #0A3641;
-    color: white;
-    text-align: center;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 6rem;
-}
-
-input[type=send]:hover {
-    background-color: #0C4C5C;
-}
-
-.contact__container {
-    border-radius: 5px;
-    padding: 5rem;
-    margin-top: 16rem;
-    position: absolute;
-    right: 0;
-    max-width: 600px;
-}
-
-/* .contactrainydays {
-    background-image: url("images/photo-1566116386886-46622124e514.webp");
-    height: 92.1%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-} */
-
-/*About Page */
-
-.about {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    opacity: 1;
-    width: 670px;
-    height: 200px;
-    margin: 8rem auto;
-    font-size: x-large;
-    font-family: 'montserrat', 'Courier New', Courier, monospace;
-}
-
-
 
