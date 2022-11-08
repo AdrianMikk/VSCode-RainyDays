@@ -27,27 +27,51 @@
         </ul>    
     </nav>
 </header>
+
 <main class="contactMain">
-    <div class="contact__container">
-        <form action="action__page.php">
-
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="fullname" placeholder="Enter full name">
-
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Enter email here">
-
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Short description">
-            
-            <label for="yourmessage">Your Message</label>
-            <input type="text" id="yourmessage" name="yourmessage" placeholder="Enter message here" style="height: 200px">
-
-            <input type="submit" value="Submit">
-        </form>
+    <div
+    style="display: flex; flex-direction: column"
+    >
+    <!-- <h1 style="font-size: 6rem;">Contact Us</h1> -->
+        <section class="flexbox">
+            <div class="contacttext">
+                <p>If you have any questions or need any help, feel free to contact us by phone or email and we will be sure to get back to you as soon as possible.</p>
+            </div>
+            <div class="contact__container">
+                <form action="action__page.php">
+                    
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Enter full name">
+                    
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter email here">
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Short description">
+                    
+                    <label for="yourmessage">Your Message</label>
+                    <input type="text" id="yourmessage" name="yourmessage" placeholder="Enter message here" style="height: 200px">
+                    
+                    <input type="send" value="Send">
+                </form>
+            </div>
+            <div class="contactrainydays"> 
+            </div>
+        </section>
+        <div
+        style="position: absolute; height: 100%; width: 100%;"
+        >
+        <h1 class="contact__h1" style="position: absolute; top: 20%; text-align: center; font-size: 5rem; background-color: red; width: 100%;">Contact us</h1>
     </div>
-    <div class="contactrainydays"> 
-    </div>
+    <section>
+        <div class="contact">
+            <div class="contact__p">
+                <p>If you have any questions or need any help, feel free to contact us by phone or email and we will be sure to get back to you as soon as possible.</p>
+                <p>Phone:+47 12 34 56 78<br>Email: help@rainydays.post</p>
+            </div>
+        </div>
+    </section>
+</div>
 </main>
     <section></section>
 </body>

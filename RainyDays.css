@@ -30,6 +30,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    /* filter: blur(px); */
 }
 
 .aboutMain {
@@ -37,6 +38,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    /* filter: blur(px); */
 }
 
 nav {
@@ -106,14 +108,9 @@ a.active, a:hover {
     margin-top: 130px;
     }
 
-    /* .active {
-     text-decoration: underline; 
-    } */
-
 .logo__text {
-    /* font-family: 'montserrat', 'Courier New', Courier, monospace; */
     font-size: 25px;
-    margin: 50px auto;
+    margin: 20px auto;
     width: auto;
     height: 200px;
     color: white;
@@ -124,7 +121,6 @@ a.active, a:hover {
 }
 
 h1, h2 {
-    /* display: block; */
     min-width: 200px;
     margin: 0px auto;
     text-align: center;
@@ -239,13 +235,34 @@ a {
 
 /* SHOP */
 
+.imageContainer {
+    font-size: large;
+    padding: 2rem;
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.imageContainer p {
+    text-align: center;
+}
+
+.shop__h1 {
+     color: #0A3641;
+    padding-top: 4rem;
+    font-size: 2.6rem;
+}
+
 .textFlex {
     display: inline-block;
 
 }
 
 .imageContainer > img {    
-    height: 100px;
+    height: 151px;
+    width: 135px;
 }
 
 .JacketImageContainer {
@@ -253,18 +270,31 @@ a {
     left: 10%;
     bottom: 20%;
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* margin: 0 auto; */
     align-items: center;
-    border: solid red 2px;
+    /* border: solid red 2px; */
     width: 80%;
+    color: #fff;
 }
 
 /* Contact Page, https://www.w3schools.com/howto/howto_css_contact_form.asp */
 
+.contact {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 1;
+    width: 670px;
+    height: 200px;
+    margin: 22.5rem auto;
+    font-size: x-large;
+    font-family: 'montserrat', 'Courier New', Courier, monospace;
+}
+
 input[type=text], select, textarea {
     width: 100%;
-    padding: 16px;
+    padding: 18px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -273,23 +303,25 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-input[type=submit] {
-    background-color: #157790;
+input[type=send] {
+    background-color: #0A3641;
     color: white;
+    text-align: center;
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    width: 6rem;
 }
 
-input[type=submit]:hover {
-    background-color: #146478;
+input[type=send]:hover {
+    background-color: #0C4C5C;
 }
 
 .contact__container {
     border-radius: 5px;
     padding: 5rem;
-    margin-top: 120px;
+    margin-top: 16rem;
     position: absolute;
     right: 0;
     max-width: 600px;
@@ -303,6 +335,19 @@ input[type=submit]:hover {
     background-size: cover;
     position: absolute;
 } */
+
+/*About Page */
+
+.about {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 1;
+    width: 670px;
+    height: 200px;
+    margin: 8rem auto;
+    font-size: x-large;
+    font-family: 'montserrat', 'Courier New', Courier, monospace;
+}
 
 
 
