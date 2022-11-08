@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainy Days</title>
-    <link rel="stylesheet" href="css/RainyDays.css">
+    <link rel="stylesheet" href="css/RainyDays.css" />
     <script src="https://kit.fontawesome.com/b318972c4d.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
       <nav>
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" />
         <label for="check" class="checkbutton">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </label>
         <label class="logo">RainyDays</label>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Shop.html">Shop</a></li>
-            <li><a class="active" href="Contact.html">Contact</a></li>
-            <li><a href="About.html">About</a></li>
-        </ul>    
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="Shop.html">Shop</a>
+          </li>
+          <li>
+            <a class="active" href="Contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="About.html">About</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="contactMain">
-        <h1 class="contact__h1">Contact Us</h1>
-        <section class="contact__flex">
-            <div class="contact">
-                <p>If you have any questions or need any help, feel free to contact us by phone or email and we will be sure to get back to you as soon as possible.</p>
-                <p>Phone:+47 12 34 56 78
-                   Email: help@rainydays.post
-                </p>
-                <div class="contact__container">
-                    <form action="action__page.php" class="contact__form">
-                        
-                        <label for="fname">Full Name</label>
-                        <input type="text" id="fname" name="fullname" placeholder="Enter full name">
-                        
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Enter email here">
-                        
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Short description">
-                        
-                        <label for="yourmessage">Your Message</label>
-                        <input type="text" id="yourmessage" name="yourmessage" placeholder="Enter message here" style="height: 200px">
-                        <input type="send" value="Send" class="contact_form__button">
-                    </form>
-                </div>
-            </div>
-        </section>
-            <div class="contactrainydays"> 
-            </div>
+      <div class="logorainydaysContact">
+        <img src="/images/RainyDays_Logo.png" alt="" />
+      </div>
+      <h1 class="contact__h1">Contact Us</h1>
+      <section class="contact__flex">
+        <div class="contact">
+          <p>
+            If you have any questions or need any help, feel free to contact us
+            by phone or email and we will be sure to get back to you as soon as
+            possible.
+          </p>
+          <p>Phone:+47 12 34 56 78 Email: help@rainydays.post</p>
+          <div class="contact__container">
+            <form action="action__page.php" class="contact__form">
+              <label for="fname">Full Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="fullname"
+                placeholder="Enter full name"
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter email here"
+              />
+
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Short description"
+              />
+
+              <label for="yourmessage">Your Message</label>
+              <input
+                type="text"
+                id="yourmessage"
+                name="yourmessage"
+                placeholder="Enter message here"
+                style="height: 200px"
+              />
+              <input type="send" value="Send" class="contact_form__button" />
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <section></section>
-</body>
+  </body>
 </html>
