@@ -390,6 +390,7 @@ input[type="send"]:hover {
 
 .checkoutFlex {
   background-color: #fff;
+  opacity: 0.75;
   color: black;
   height: 394px;
   width: 314px;
@@ -415,10 +416,50 @@ input[type="send"]:hover {
 .checkout__h1 {
   margin: 50px auto;
   padding-top: 25px;
-  /* font-weight: bolder; */
 }
 
+.checkout__cta {
+  display: inline-block;
+  background: var(--logo-blue);
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  line-height: 80px;
+  border-radius: 20px;
+  margin: auto;
+  width: 60%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+} 
+
 /* Confirmation */
+
+.confirmation__h1 {
+  margin: 50px auto;
+  font-size: 30px;
+}
+
+.confirmation__p {
+  text-align: center;
+}
+
+.confirmation__cta {
+  display: inline-block;
+  background: var(--logo-blue);
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  line-height: 80px;
+  border-radius: 20px;
+  margin: auto;
+  width: 60%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+ /* 425px break */
+}
 
 @media (max-width: 952px) {
   label.logo {
