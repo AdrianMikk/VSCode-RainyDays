@@ -47,6 +47,20 @@ body {
   min-height: 100vh;
 }
 
+.productMain {
+  background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.checkoutMain {
+  background: url("/images/photo-1648564626497-fbc3f8b2b827.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
 nav {
   background: var(--logo-blue);
   height: 80px;
@@ -331,13 +345,80 @@ input[type="send"]:hover {
     justify-content: left; */
 }
 
-.product__p {
-    color: #fff;
-}
-
 .product__price {
     color: #fff;
 }
+
+.product__cta {
+  display: inline-block;
+  background: var(--logo-blue);
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  line-height: 80px;
+  border-radius: 20px;
+  margin: auto;
+  width: 60%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+} 
+
+.ProductImageContainer {
+  display: flex;
+}
+
+.imageContainer img {
+  width: 125px;
+  height: 158px;
+}
+
+.imageContainer__text {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.product__price {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  padding-bottom: 20px;
+}
+
+/* Checkout */
+
+.checkoutFlex {
+  background-color: #fff;
+  color: black;
+  height: 394px;
+  width: 314px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.checkout__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  border-bottom: 2px solid black;
+}
+
+.checkout__total {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  border-bottom: 2px solid black;
+}
+
+.checkout__h1 {
+  margin: 50px auto;
+  padding-top: 25px;
+  /* font-weight: bolder; */
+}
+
+/* Confirmation */
 
 @media (max-width: 952px) {
   label.logo {
