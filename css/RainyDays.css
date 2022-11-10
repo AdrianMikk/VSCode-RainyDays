@@ -16,7 +16,7 @@ body {
 }
 
 .indexMain {
-  background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png);
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -74,6 +74,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+}
+
+.navLogo {
+  height: 60px;
 }
 
 label.logo {
@@ -172,7 +176,6 @@ a {
   margin: auto;
   width: 200px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .cta a {
@@ -223,7 +226,6 @@ a {
 /* Contact Page, https://www.w3schools.com/howto/howto_css_contact_form.asp */
 
 .contact__h1 {
-  top: 20%;
   text-align: center;
   font-size: 3rem;
   color: #fff;
@@ -233,6 +235,7 @@ a {
   display: flex;
   flex: 1;
   flex-direction: column;
+  align-items: center;
 }
 
 .contact {
@@ -241,7 +244,7 @@ a {
   gap: 2rem;
   color: #fff;
   opacity: 1;
-  width: 100%;
+  width: 80%;
   padding: 1rem;
 }
 
@@ -267,6 +270,30 @@ a {
   gap: 0.5rem;
 }
 
+.contact_form__button {
+  display: inline-block;
+  background: var(--logo-blue);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 120%;
+  line-height: 60px;
+  border: none;
+  padding: 0;
+  color: #fff;
+  border-radius: 15px;
+  margin: auto;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact_form__button:hover,
+.contact_form__button:active {
+  background: #0c4c5c;
+  transition: 0.5s;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -279,10 +306,6 @@ textarea {
   box-sizing: border-box;
   resize: vertical;
 }
-
-/* @media () { */
-    
-/* } */
 
 input[type="send"] {
   background-color: var(--logo-blue);
@@ -299,15 +322,6 @@ input[type="send"] {
 input[type="send"]:hover {
   background-color: #0c4c5c;
 }
-
-/* .contactrainydays {
-    background-image: url("images/photo-1566116386886-46622124e514.webp");
-    height: 92.1%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-     
-} */
 
 /*About Page */
 
@@ -439,14 +453,15 @@ input[type="send"]:hover {
 /* Checkout */
 
 .checkoutFlex {
-  background-color: #fff;
-  opacity: 0.75;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
   color: black;
-  height: 394px;
-  width: 314px;
-  margin: auto;
+  width: 600px;
+  margin: 0 auto;
   margin-top: 30px;
   border-radius: 10px;
+  padding-bottom: 1rem;
 }
 
 .checkout__item {
@@ -486,7 +501,6 @@ input[type="send"]:hover {
 /* Confirmation */
 
 .confirmation__h1 {
-  margin: 50px auto;
   font-size: 30px;
 }
 
@@ -494,21 +508,18 @@ input[type="send"]:hover {
   text-align: center;
 }
 
-.confirmation__cta {
-  display: inline-block;
-  background: var(--logo-blue);
-  text-align: center;
-  font-weight: bold;
-  font-size: 150%;
-  line-height: 80px;
-  border-radius: 20px;
-  margin: auto;
-  width: 60%;
-  text-decoration: none;
+.confirmation__text {
   display: flex;
-  justify-content: center;
-  margin-top: 140px;
- /* 425px break */
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.confirmation__text > .cta {
+  margin: 0;
+  width: auto;
+  padding: 0 1rem;
 }
 
 @media (max-width: 1100px) {
@@ -526,6 +537,10 @@ input[type="send"]:hover {
 
   .productImageLarge {
     width: 100%;
+  }
+
+  .checkoutFlex {
+    width: 50%;
   }
 }
 
@@ -577,6 +592,10 @@ input[type="send"]:hover {
   .productTextContainer {
     width: auto;
   }
+
+  .checkoutFlex {
+    width: 60%;
+  }
 }
 
 @media (max-width: 720px) {
@@ -602,6 +621,10 @@ input[type="send"]:hover {
     "productGrid4"
     "productGrid5";
   }
+
+  .checkoutFlex {
+    width: 70%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -613,6 +636,15 @@ input[type="send"]:hover {
 
   .product__cta {
     width: 100%;
+  }
+
+  .checkoutFlex {
+    width: 80%;
+  }
+
+  .confirmation__cta {
+    font-size: 100%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -630,11 +662,8 @@ input[type="send"]:hover {
     align-items: center;
     justify-content: center;
   }
-}
 
-/* @media screen and 
-(max-width:20rem),
-(max-width:30.0625rem),
-(max-width:40.0625rem),
-(max-width:60.0625rem),
-(max-width:64.0625rem) { */
+  .checkoutFlex {
+    width: 90%;
+  }
+}
