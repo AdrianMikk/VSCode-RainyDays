@@ -32,5 +32,5 @@ https://www.figma.com/file/hpQBMiV05wTMA6Pp6XXN11/2022-09-24_design1_CA_Adrian-m
 ## Authors
 
 Adrian Mikkelsen Johannessen
-adrianjohannessen5@gmail.com
+Email: adrianjohannessen5@gmail.com
 GitHub: AdrianMikk
