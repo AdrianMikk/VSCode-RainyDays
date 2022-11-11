@@ -11,25 +11,29 @@
   --logo-blue: #0a3641;
 }
 
+:root {
+  --hover-blue: #0C4C5C;
+}
+
 body {
   font-weight: bold;
 }
 
-.indexMain {
-  background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 2.png);
+.index-main {
+  background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 222.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
 }
 
-.shopMain {
-  background: url(../images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png);
+.shop-main {
+  background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 33\ shoppage.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
 }
 
-.contactMain {
+.contact-main {
   background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/photo-1566116386886-46622124e514.webp");
   background-size: cover;
   background-position: center;
@@ -39,15 +43,15 @@ body {
   gap: 2rem;
 }
 
-.aboutMain {
-  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/photo-1533243216203-8c08406d4583.webp");
+.about-main {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/photo-1533243216203-8c08406d4583\ about.jpg");
   background-size: cover;
   background-position: center;
   padding-bottom: 3rem;
   min-height: 100vh;
 }
 
-.productMain {
+.product-main {
   background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png");
   background-size: cover;
   background-position: center;
@@ -57,7 +61,7 @@ body {
   align-items: center;
 }
 
-.checkoutMain {
+.checkout-main {
   background: url("/images/photo-1648564626497-fbc3f8b2b827.webp");
   background-size: cover;
   background-position: center;
@@ -108,7 +112,7 @@ nav ul li a {
 
 a.active,
 a:hover {
-  background: #0c4c5c;
+  background: var(--hover-blue);
   transition: 0.5s;
 }
 
@@ -159,7 +163,7 @@ a {
   color: white;
 }
 
-.buttonFlex {
+.button-flex {
   display: flex;
   justify-content: center;
 }
@@ -171,7 +175,6 @@ a {
   font-weight: bold;
   font-size: 190%;
   line-height: 80px;
-  /* font-family: montserrat, courier 'Courier New', Courier, monospace; */
   border-radius: 12px;
   margin: auto;
   width: 200px;
@@ -320,7 +323,7 @@ input[type="send"] {
 }
 
 input[type="send"]:hover {
-  background-color: #0c4c5c;
+  background-color: var(--hover-blue);
 }
 
 /*About Page */
@@ -333,9 +336,8 @@ input[type="send"]:hover {
 }
 
 .about {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
-  opacity: 1;
   width: 670px;
   height: 200px;
   padding: 1rem;
@@ -452,7 +454,7 @@ input[type="send"]:hover {
 
 /* Checkout */
 
-.checkoutFlex {
+.checkout-flex {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.7);
