@@ -571,7 +571,7 @@ input[type="send"]:hover {
   a:hover,
   a.active {
     background: none;
-    color: #127993;
+    color: #1d95b3
   }
   #check:checked ~ ul {
     left: 0;
