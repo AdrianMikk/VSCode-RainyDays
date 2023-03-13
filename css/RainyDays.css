@@ -19,8 +19,25 @@ body {
   font-weight: bold;
 }
 
+footer {
+  background-color: var(white);
+  background: var(--logo-blue);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-p {
+  font-size: 16px;
+  color: white;
+}
+
 .index-main {
-  background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 222.png");
+  background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 3-min.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -70,9 +87,9 @@ body {
 
 nav {
   background: var(--logo-blue);
-  height: 80px;
+  position: fixed;
   width: 100%;
-  z-index: 10;
+  /* z-index: 999; */
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -107,7 +124,6 @@ nav ul li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  text-transform: uppercase;
 }
 
 a.active,
@@ -122,6 +138,7 @@ a:hover {
   line-height: 80px;
   cursor: pointer;
   display: none;
+  transition: right 0.5s ease-in-out; 
 }
 
 #check {
@@ -170,7 +187,7 @@ a {
 
 .cta {
   display: inline-block;
-  background: var(--logo-blue);
+  background-color: var(--logo-blue);
   text-align: center;
   font-weight: bold;
   font-size: 190%;
@@ -197,11 +214,12 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px;
-  border-bottom: 1px solid white;
 }
 
 .imageContainer p {
   text-align: center;
+  justify-content: space-around;
+  display: flex;
 }
 
 .shop__h1 {
@@ -228,101 +246,98 @@ a {
 
 /* Contact Page, https://www.w3schools.com/howto/howto_css_contact_form.asp */
 
-.contact__h1 {
-  text-align: center;
-  font-size: 3rem;
-  color: #fff;
-}
-
-.contact__flex {
+/* Contact main styles */
+.contact-main {
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px 0;
+  color: #fff;
 }
 
-.contact {
+/* Logo styles */
+.logo-rainy-days {
+  margin-bottom: 30px;
+}
+
+.logo-rainy-days img {
+  max-width: 100%;
+  margin-top: 8rem;
+}
+
+/* Contact heading styles */
+.contact__h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Contact form styles */
+.contact__flex {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  color: #fff;
-  opacity: 1;
-  width: 80%;
-  padding: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .contact__text {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  justify-content: space-evenly;
+  margin-right: 50px;
+  max-width: 400px;
+  /* font-size:  */
+}
+
+.contact__text p {
+  margin-bottom: 10px;
 }
 
 .contact__container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.contact input[type="text"],
+.contact input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
   border-radius: 5px;
-  width: 90%;
-}
-
-.contact p {
-  text-align: center;
-}
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.contact_form__button {
-  display: inline-block;
-  background: var(--logo-blue);
-  text-align: center;
-  font-weight: bolder;
-  font-size: 120%;
-  line-height: 60px;
-  border: none;
-  padding: 0;
-  color: #fff;
-  border-radius: 15px;
-  margin: auto;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.contact_form__button:hover,
-.contact_form__button:active {
-  background: #0c4c5c;
-  transition: 0.5s;
-}
-
-input[type="text"],
-select,
-textarea {
-  margin: 0 auto;
-  width: 100%;
-  height: 36px;
-  padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-input[type="send"] {
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.25);
+}
+
+.contact .form-error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#contactButton[type="submit"] {
   background-color: var(--logo-blue);
-  color: white;
-  text-align: center;
-  padding: 12px 20px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
-  width: 6rem;
-  align-self: center;
 }
 
-input[type="send"]:hover {
+#contactButton[type="submit"]:hover {
   background-color: var(--hover-blue);
 }
 
@@ -459,7 +474,7 @@ input[type="send"]:hover {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
-  width: 600px;
+  width: 60%;
   margin: 0 auto;
   margin-top: 30px;
   border-radius: 10px;

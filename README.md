@@ -34,3 +34,13 @@ https://www.figma.com/file/hpQBMiV05wTMA6Pp6XXN11/2022-09-24_design1_CA_Adrian-m
 Adrian Mikkelsen Johannessen
 adrianjohannessen5@gmail.com
 GitHub: AdrianMikk
+
+## Updated version for Interaction Design CA
+
+I removed the dir="ltr" attribute from the html tags as I found out that it is unnecessary.
+
+I removed the http-equiv="X-UA-Compatible" meta tag as it is no longer needed for modern browsers.
+
+I removed the 'crossorigin' attribute from the Font awesome script tag.
+
+Removed unnecessary spacing.
