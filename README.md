@@ -44,3 +44,5 @@ I removed the http-equiv="X-UA-Compatible" meta tag as it is no longer needed fo
 I removed the 'crossorigin' attribute from the Font awesome script tag.
 
 Removed unnecessary spacing.
+
+Made new navbar.

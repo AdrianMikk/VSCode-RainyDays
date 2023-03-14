@@ -44,7 +44,7 @@ form.addEventListener("submit", function(event) {
   if (isValid) {
     console.log("IT WORKS");
     event.preventDefault();
-    form.innerHTML = `<p class="succeedMessage">"Success! Your form has been submitted."</p>`
+    // form.innerHTML = `<p class="succeedMessage">"Success! Your form has been submitted."</p>`
   }
 
   form.reset();

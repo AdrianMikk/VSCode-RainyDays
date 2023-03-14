@@ -4,7 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "montserrat", "Courier New", Courier, monospace;
+  /* font-family: "montserrat", "Courier New", Courier, monospace; */
 }
 
 :root {
@@ -86,63 +86,56 @@ footer {
 }
 
 nav {
-  background: var(--logo-blue);
-  position: fixed;
-  width: 100%;
-  /* z-index: 999; */
   display: flex;
-  gap: 1rem;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0A3641; 
 }
 
-.navLogo {
-  height: 60px;
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
 
-label.logo {
-  color: #fff;
-  font-size: 35px;
-  line-height: 80px;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
   font-weight: bold;
+  font-size: 14px;
 }
 
-nav ul {
-  float: right;
-  margin-right: 20px;
+.burger {
+  display: none;
+  cursor: pointer;
 }
 
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: #fff;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 a.active,
 a:hover {
   background: var(--hover-blue);
   transition: 0.5s;
-}
-
-.checkbutton {
-  font-size: 30px;
-  color: #fff;
-  line-height: 80px;
-  cursor: pointer;
-  display: none;
-  transition: right 0.5s ease-in-out; 
-}
-
-#check {
-  display: none;
 }
 
 .logorainydays {
@@ -683,4 +676,64 @@ a {
   .checkoutFlex {
     width: 90%;
   }
+}
+
+/* Media Queries NAV*/
+
+@media screen and (max-width:1024px) {
+  .nav-links {
+      width: 60%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+      overflow-x: hidden;
+  }
+  .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #0A3641; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+      opacity: 0;
+  }
+  .burger {
+      display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+     opacity: 0;
+     transform: translateX(50px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-6px);
 }
