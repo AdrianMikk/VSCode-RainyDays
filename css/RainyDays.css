@@ -86,6 +86,14 @@ footer {
   min-height: 100vh;
 }
 
+.confirmation-main {
+  background: url("/images/Desktop\ -\ 1-min.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -166,11 +174,22 @@ a:hover {
   margin-top: 80px;
 }
 
+/* Logo styles for some of the pages */
+.logo-rainy-days {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.logo-rainy-days img {
+  max-width: 100%;
+  margin-top: 8rem;
+}
+
 .logo__text {
-  font-size: 25px;
+  font-size: 20px;
   margin: 20px auto;
   width: auto;
-  height: 200px;
+  height: 100px;
   color: #fff;
 }
 
@@ -222,7 +241,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 25px;
 }
 
 .imageContainer p {
@@ -262,16 +281,6 @@ a {
   height: 100%;
   padding: 50px 0;
   color: #fff;
-}
-
-/* Logo styles */
-.logo-rainy-days {
-  margin-bottom: 30px;
-}
-
-.logo-rainy-days img {
-  max-width: 100%;
-  margin-top: 8rem;
 }
 
 /* Contact heading styles */
@@ -514,7 +523,7 @@ a {
   background: var(--logo-blue);
   text-align: center;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 25px;
   line-height: 80px;
   border-radius: 20px;
   margin: auto;
@@ -540,6 +549,7 @@ a {
   align-items: center;
   gap: 4rem;
   margin-top: 3rem;
+  color: #fff;
 }
 
 .confirmation__text > .cta {

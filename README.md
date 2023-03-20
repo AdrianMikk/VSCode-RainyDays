@@ -54,3 +54,5 @@ Made the header sticky.
 Removed logo from productpage.
 
 Added new font
+
+Added image and edited the confirmation page.
