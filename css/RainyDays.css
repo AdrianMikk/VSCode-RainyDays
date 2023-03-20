@@ -4,7 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  /* font-family: "montserrat", "Courier New", Courier, monospace; */
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -91,7 +91,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  font-family: 'Poppins', sans-serif;
   background-color: #0A3641; 
   width: 100%;
   position: fixed;
