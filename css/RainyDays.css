@@ -291,7 +291,7 @@ a {
 .contact__text {
   margin-right: 50px;
   max-width: 400px;
-  /* font-size:  */
+  text-align: center;
 }
 
 .contact__text p {
@@ -361,9 +361,9 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   width: 50%;
-  /* height: 200px; */
   padding: 1rem;
   font-size: x-large;
+  text-align: center;
 }
 
 .about__text {
