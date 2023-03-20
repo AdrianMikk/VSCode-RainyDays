@@ -46,3 +46,11 @@ I removed the 'crossorigin' attribute from the Font awesome script tag.
 Removed unnecessary spacing.
 
 Made new navbar.
+
+Removed logo from navbar
+
+Made the header sticky.
+
+Removed logo from productpage.
+
+Added new font
