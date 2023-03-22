@@ -48,6 +48,7 @@ footer {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
 .contact-main {
@@ -199,7 +200,7 @@ a:hover {
 
 h1,
 h2 {
-  min-width: 200px;
+  min-width: 100px;
   margin: 0px auto;
   text-align: center;
 }
@@ -535,12 +536,13 @@ a {
 
 /* Confirmation */
 
-.confirmation__h1 {
+.confirmation-h1 {
   font-size: 30px;
 }
 
-.confirmation__p {
+.confirmation-h2 {
   text-align: center;
+  font-size: 20px;
 }
 
 .confirmation__text {
@@ -737,12 +739,12 @@ a {
   .burger {
       display: block;
   }
+  .nav-active {
+    transform: translateX(100%);
+    width: 100%
+  } 
 }
 
-.nav-active {
-    transform: translateX(100%);
-    width: 100%;
-}
 
 @keyframes navLinkFade {
   from {

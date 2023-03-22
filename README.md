@@ -37,12 +37,6 @@ GitHub: AdrianMikk
 
 ## Updated version for Interaction Design CA
 
-I removed the dir="ltr" attribute from the html tags as I found out that it is unnecessary.
-
-I removed the http-equiv="X-UA-Compatible" meta tag as it is no longer needed for modern browsers.
-
-I removed the 'crossorigin' attribute from the Font awesome script tag.
-
 Removed unnecessary spacing.
 
 Made new navbar.
@@ -56,3 +50,5 @@ Removed logo from productpage.
 Added new font
 
 Added image and edited the confirmation page.
+
+Edited some of the logo sizes.
