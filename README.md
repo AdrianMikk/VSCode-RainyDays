@@ -52,3 +52,13 @@ Added new font
 Added image and edited the confirmation page.
 
 Edited some of the logo sizes.
+
+Added a cart on the navbar so the cart is reachable from anywhere and not only when purchasing manually.
+
+Fixed the cart so that it doesn't break on mobile / smaller devices.
+
+Added textarea instead of input on the message box on contact.
+
+Added form validation
+
+Made the images under 200kb. Since a lot of them were over since last time.

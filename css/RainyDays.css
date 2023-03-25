@@ -79,7 +79,7 @@ footer {
 }
 
 .product-main {
-  background: url("/images/adrian-infernus-0SyHFboAIKI-unsplash\ 3\ shoppage.png");
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.3)), url("/images/Desktop\ -\ 4-min\ \(1\).jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -411,7 +411,7 @@ a {
 /*Product Page*/
 
 .product__h1 {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     padding: 0.5rem;
     border-radius: 10px;
@@ -465,6 +465,10 @@ a {
 }
 
 .productGridContainer {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
   display: grid;
   gap: 1rem;
   align-items: center;
