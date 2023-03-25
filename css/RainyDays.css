@@ -61,7 +61,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     padding: 50px 0;
     color: #fff;
     background-size: cover;
@@ -79,7 +78,7 @@ footer {
 }
 
 .product-main {
-  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.3)), url("/images/Desktop\ -\ 4-min\ \(1\).jpg");
+  background: url("/images/Desktop\ -\ 4-min\ \(1\).jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -284,6 +283,12 @@ a {
 
 /* Contact */
 
+.contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .contact__h1 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -298,8 +303,10 @@ a {
 }
 
 .contact__text {
-  max-width: 400px;
+  max-width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__text p {
@@ -308,6 +315,11 @@ a {
 
 .contact__form-container {
   max-width: 100%;
+  margin: auto;
+}
+
+#contactForm {
+  max-width: 400px;
 }
 
 .contact__container {
@@ -372,6 +384,14 @@ a {
   align-items: flex-start;
   border-radius: 5px;
   border: none;
+}
+
+#succeedMessage {
+  text-align: center;
+}
+
+#successReturn {
+  background-color: var(--logo-blue);
 }
 
 /* Error Messages */ 

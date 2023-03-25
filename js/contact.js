@@ -1,14 +1,22 @@
 
-const form = document.querySelector("form");
+const form = document.querySelector("#contactForm");
+const contactBtn = document.querySelector("#contactButton");
+const firstName = document.querySelector("#firstName");
+const lastName = document.querySelector("#lastName");
+const subject = document.querySelector("#subject");
+const email = document.querySelector("#email");
+const message = document.querySelector("#message");
+
+
 
 function validateForm(event) {
-  const firstName = document.querySelector("#firstName");
-  const lastName = document.querySelector("#lastName");
-  const subject = document.querySelector("#subject");
-  const email = document.querySelector("#email");
-  const message = document.querySelector("#message");
+  // const firstName = document.querySelector("#firstName");
+  // const lastName = document.querySelector("#lastName");
+  // const subject = document.querySelector("#subject");
+  // const email = document.querySelector("#email");
+  // const message = document.querySelector("#message");
   const errorMessages = document.querySelectorAll(".error-message");
-  event.preventDefault();
+  // event.preventDefault();
   
 
   let isValid = true;
@@ -45,17 +53,20 @@ function validateForm(event) {
   if (!isValid) {
   }
 
-  if (isValid) {
+  if (isValid === true) {
     console.log("IT WORKS");
-    // event.preventDefault();
+    event.preventDefault();
     // form.innerHTML = `<p class="succeedMessage">"Success! Your form has been submitted."</p>`
   }
-
-  // form.reset();
 }
 
-form.addEventListener("submit", validateForm);
+// validateForm();
+
 form.addEventListener("input", validateForm);
+// contactBtn.addEventListener("input", function() { 
+//   form.innerHTML = `<p class="succeedMessage">"Success! Your form has been submitted."</p>`
+
+// });
 
 
 function addErrorMessage(message, field) {
@@ -76,18 +87,41 @@ function validateEmail(email) {
   return patternMatches;
 }
 
+// form.addEventListener("submit", function (event) {
+
+//   if (
+//     checkLength(firstName.value, 1) &&
+//     checkLength(lastName.value, 3) &&
+//     validateEmail(email.value) && 
+//     checkLength(message.value, 9) && 
+//     checkLength(subject.value, 24)
+//   ) {
+//     form.innerHTML = `<p class="succeedMessage">"Thank you! Your form has been submitted."</p>`
+
+//     form.innerHTML = `<div>
+//                         <h3 style="text-align: center;">Thank you! Form has been submitted.
+//                         </h3>
+//                         <button id="successReturn"
+//                         class=cta" style="padding: 5px;
+//                         float: right;">Go back</button>
+//                       </div>`;
+//     let btn = document.querySelector("#successReturn");
+
+//     btn.addEventListener("click", function () {
+//       location.reload();
+//     });
+//   } else {
+//     console.log("Complete form");
+//     event.preventDefault();
+//   }
+// });
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+  if (validateForm) {
 
-  if (
-    checkLength(firstNameInput.value, 1) &&
-    checkLength(lastNameInput.value, 3) &&
-    validateEmail(emailInput.value) && 
-    checkLength(messageInput.value, 9) && 
-    checkLength(subjectInput.value, 24)
-  ) {
     form.innerHTML = `<div>
-                        <h3 style="text-align: center;">Thank you! Form has been submitted.
+                        <h3 style="text-align: center; font-size: 2rem;">Thank you! Form has been submitted.
                         </h3>
                         <button id="successReturn"
                         class=cta" style="padding: 5px;
@@ -100,5 +134,6 @@ form.addEventListener("submit", function (event) {
     });
   } else {
     console.log("Complete form");
+    event.preventDefault();
   }
 });
