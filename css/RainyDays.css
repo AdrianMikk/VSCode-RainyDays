@@ -392,6 +392,15 @@ a {
 
 #successReturn {
   background-color: var(--logo-blue);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#successReturn[type="submit"]:hover {
+  background-color: var(--hover-blue);
 }
 
 /* Error Messages */ 

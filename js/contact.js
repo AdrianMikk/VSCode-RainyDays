@@ -124,8 +124,8 @@ form.addEventListener("submit", function (event) {
                         <h3 style="text-align: center; font-size: 2rem;">Thank you! Form has been submitted.
                         </h3>
                         <button id="successReturn"
-                        class=cta" style="padding: 5px;
-                        float: right;">Go back</button>
+                        class=cta" style="padding: 5px;">
+                        Go back</button>
                       </div>`;
     let btn = document.querySelector("#successReturn");
 
