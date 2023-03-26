@@ -37,10 +37,28 @@ GitHub: AdrianMikk
 
 ## Updated version for Interaction Design CA
 
-I removed the dir="ltr" attribute from the html tags as I found out that it is unnecessary.
-
-I removed the http-equiv="X-UA-Compatible" meta tag as it is no longer needed for modern browsers.
-
-I removed the 'crossorigin' attribute from the Font awesome script tag.
-
 Removed unnecessary spacing.
+
+Made new navbar.
+
+Removed logo from navbar
+
+Made the header sticky.
+
+Removed logo from productpage.
+
+Added new font
+
+Added image and edited the confirmation page.
+
+Edited some of the logo sizes.
+
+Added a cart on the navbar so the cart is reachable from anywhere and not only when purchasing manually.
+
+Fixed the cart so that it doesn't break on mobile / smaller devices.
+
+Added textarea instead of input on the message box on contact.
+
+Added form validation
+
+Made the images under 200kb. Since a lot of them were over since last time.

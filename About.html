@@ -7,10 +7,9 @@
     <meta name="description" content="Read more about us">
     <title>About Us</title>
     <link rel="stylesheet" href="css/RainyDays.css">
-    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+    <script defer src="/js/navigation.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Hotjar Tracking Code for my site -->
     <script>
         (function(h,o,t,j,a,r){
@@ -27,23 +26,41 @@
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="check">
-            <a href="/index.html">
-                <img src="/images/RainyDays_LogoWhite.png" class="navLogo" alt="RainyDays logo navbar"> 
-            </a>
-            <label for="check" class="checkbutton">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="index.html"><b>Home</b></a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a class="active" href="about.html">About</a></li>
-            </ul>    
+            <div class="logo">
+                <a href="index.html">
+                    <h4>Rainy Days</h4>
+                  </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+                <li>
+                    <a class="active" href="About.html">About</a>
+                </li>
+            </ul>
+            <div class="cart-container">
+                <div>
+                    <a href="/checkout.html">
+                        <img src="/images/cart 1.png" class="cart-img" alt="Shopping cart icon">
+                    </a>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="about-main">
-        <div class="logorainydays">
+        <div class="logo-rainy-days">
             <img src="/images/RainyDays_LogoWhite.png" alt="RainyDays logo"> 
         </div>
         <section class="about__text">
@@ -57,7 +74,7 @@
     </main>
     <footer>
         <div class="footer-container">
-            <p class="footer-p">&copy; 2023 My Website</p>
+            <p class="footer-p">Copyright &copy; 2022</p>
         </div>
     </footer>
 </body>

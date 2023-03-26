@@ -7,12 +7,10 @@
     <meta name="description" content="View our jackets and prices" />
     <title>Shop</title>
     <link rel="stylesheet" href="css/RainyDays.css" />
-    <script src="https://kit.fontawesome.com/b318972c4d.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"/>
+    <script defer src="/js/navigation.js" type="module"></script>
+    <script defer src="./js/data/shop.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
       <!-- Hotjar Tracking Code for my site -->
  <script>
   (function(h,o,t,j,a,r){
@@ -28,20 +26,38 @@
   <body>
     <header>
       <nav>
-        <input type="checkbox" id="check">
-        <a href="/index.html">
-        <img src="/images/RainyDays_LogoWhite.png" class="navLogo" alt="RainyDays logo navbar" /> 
-        </a>
-        <label for="check" class="checkbutton">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="shop.html">Shop</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
+        <div class="logo">
+          <a href="index.html">
+            <h4>Rainy Days</h4>
+          </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="active" href="Shop.html">Shop</a>
+            </li>
+            <li>
+                <a href="Contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="About.html">About</a>
+            </li>
         </ul>
-      </nav>
+        <div class="cart-container">
+          <div>
+            <a href="/checkout.html">
+              <img src="/images/cart 1.png" class="cart-img" alt="Shopping cart icon">
+            </a>
+          </div>
+          <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+      </div>
+    </nav>
     </header>
     <main class="shop-main">
         <div class="logorainydays">
@@ -51,49 +67,49 @@
       <div class="JacketImageContainer">
         <a href="/Product.html">
           <div class="imageContainer">
-              <img src="/images/RainyDays_Jacket11.png" alt="Warm & comfortable water reppelent jacket. Orange and black details." />
+              <img src="/images/RainyDays_Jacket1.png" alt="Warm & comfortable water reppelent jacket. Orange and black details." />
               <p>Solstice Goretex</p>
               <p>$179.90</p>
           </div>
         </a>
         <a href="/Product.html">
         <div class="imageContainer">
-          <img src="/images/RainyDays_Jacket44.png" alt="Black and white jacket with a yellow text and logo" />
+          <img src="/images/RainyDays_Jacket4.png" alt="Black and white jacket with a yellow text and logo" />
           <p>Scott Hildimar</p>
           <p>$259.90</p>
         </div>
       </a>
         <a href="/Product.html">
         <div class="imageContainer">
-            <img src="/images/RainyDays_Jacket33.png" alt="Sporty jacket with a bright red color" />
+            <img src="/images/RainyDays_Jacket3.png" alt="Sporty jacket with a bright red color" />
             <p>Xtreme Seektex</p>
             <p>$299.90</p>
         </div>
       </a>
         <a href="/Product.html">
          <div class="imageContainer">
-          <img src="/images/RainyDays_Jacket66.png" alt="Black and white jacket that keeps you warm" />
+          <img src="/images/RainyDays_Jacket6.png" alt="Black and white jacket that keeps you warm" />
           <p>Amon Ajay</p>
           <p>$279.90</p>
         </div>
         </a>
         <a href="/Product.html">
         <div class="imageContainer">
-          <img src="/images/RainyDays_Jacket55.png" alt="Grey jacket with breathing fabric" />
+          <img src="/images/RainyDays_Jacket5.png" alt="Grey jacket with breathing fabric" />
           <p>Scott Goretex</p>
           <p>$169.90</p>
         </div>
       </a>
       <a href="/Product.html">
         <div class="imageContainer">
-          <img src="/images/RainyDays_Jacket22.png" alt="Dark and grey jacket with a shiny look" />
+          <img src="/images/RainyDays_Jacket2.png" alt="Dark and grey jacket with a shiny look" />
           <p>Quintil Hersh</p>
           <p>$129.90</p>
         </div>
       </a>
       <a href="/Product.html">
         <div class="imageContainer">
-          <img src="/images/RainyDays_Jacket77.png" alt="Beige jacket with pockets" />
+          <img src="/images/RainyDays_Jacket7.png" alt="Beige jacket with pockets" />
           <p>Austin Herberos</p>
           <p>$109.90</p>
         </div>
@@ -102,7 +118,7 @@
     </main>
     <footer>
       <div class="footer-container">
-          <p class="footer-p">&copy; 2023 My Website</p>
+          <p class="footer-p">Copyright &copy; 2022</p>
       </div>
   </footer>
   </body>
