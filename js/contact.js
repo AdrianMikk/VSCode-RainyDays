@@ -10,14 +10,9 @@ const message = document.querySelector("#message");
 
 
 function validateForm(event) {
-  // const firstName = document.querySelector("#firstName");
-  // const lastName = document.querySelector("#lastName");
-  // const subject = document.querySelector("#subject");
-  // const email = document.querySelector("#email");
-  // const message = document.querySelector("#message");
-  const errorMessages = document.querySelectorAll(".error-message");
-  // event.preventDefault();
   
+  const errorMessages = document.querySelectorAll(".error-message");
+
 
   let isValid = true;
 
@@ -56,17 +51,12 @@ function validateForm(event) {
   if (isValid === true) {
     console.log("IT WORKS");
     event.preventDefault();
-    // form.innerHTML = `<p class="succeedMessage">"Success! Your form has been submitted."</p>`
   }
 }
 
 // validateForm();
 
 form.addEventListener("input", validateForm);
-// contactBtn.addEventListener("input", function() { 
-//   form.innerHTML = `<p class="succeedMessage">"Success! Your form has been submitted."</p>`
-
-// });
 
 
 function addErrorMessage(message, field) {
@@ -87,45 +77,16 @@ function validateEmail(email) {
   return patternMatches;
 }
 
-// form.addEventListener("submit", function (event) {
-
-//   if (
-//     checkLength(firstName.value, 1) &&
-//     checkLength(lastName.value, 3) &&
-//     validateEmail(email.value) && 
-//     checkLength(message.value, 9) && 
-//     checkLength(subject.value, 24)
-//   ) {
-//     form.innerHTML = `<p class="succeedMessage">"Thank you! Your form has been submitted."</p>`
-
-//     form.innerHTML = `<div>
-//                         <h3 style="text-align: center;">Thank you! Form has been submitted.
-//                         </h3>
-//                         <button id="successReturn"
-//                         class=cta" style="padding: 5px;
-//                         float: right;">Go back</button>
-//                       </div>`;
-//     let btn = document.querySelector("#successReturn");
-
-//     btn.addEventListener("click", function () {
-//       location.reload();
-//     });
-//   } else {
-//     console.log("Complete form");
-//     event.preventDefault();
-//   }
-// });
-
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   if (validateForm) {
 
     form.innerHTML = `<div>
-                        <h3 style="text-align: center; font-size: 2rem;">Thank you! Form has been submitted.
-                        </h3>
+                        <h3 style="text-align: center; font-size: 2rem; margin-top: 50px;">Thank you! Form has been submitted.
+                        </h3> 
                         <button id="successReturn"
-                        class=cta" style="padding: 5px;">
-                        Go back</button>
+                        class=cta" style="padding: 5px;
+                        margin: right;">Go back</button>
                       </div>`;
     let btn = document.querySelector("#successReturn");
 
