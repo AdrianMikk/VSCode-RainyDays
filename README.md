@@ -64,3 +64,26 @@ Added form validation
 Made the images under 200kb. Since a lot of them were over since last time.
 
 ## CMS Update
+
+Added headless.
+
+And completed these:
+
+Setup a WordPress instance
+
+- Install WordPress locally using your preferred tool
+- Install and configure the WooCommerce plugin
+- Add at least 5 products to WooCommerce
+- Designate at least 1 product as Featured
+- Create a Noroff admin user with a strong, unique password
+- Deploy your WordPress instance to a remote host
+
+Implement WordPress API using JavaScript
+
+- Create JavaScript to fetch an array of product data from WordPress API
+- Create JavaScript functionality to fetch a single product’s data from WordPress API
+- Create JavaScript functionality to render a grid of product data in HTML as thumbnails
+- Filter Featured products from the list and show these in their own section
+- Create a Product Detail page that uses an id search parameter render a single product’s - data
+- Make sure that all changes to your project are committed and pushed
+- Deploy your cross-course project to Netlify
