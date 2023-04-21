@@ -62,3 +62,5 @@ Added textarea instead of input on the message box on contact.
 Added form validation
 
 Made the images under 200kb. Since a lot of them were over since last time.
+
+## CMS Update
