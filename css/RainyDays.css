@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  text-decoration: none;
   list-style: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -111,6 +110,7 @@ nav {
   background-color: #0A3641; 
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 .logo {
@@ -239,13 +239,27 @@ a {
   text-align: center;
 }
 
+.featuredJacket {
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.featured-h1 {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
 /* SHOP */
 
 .imageContainer {
   color: #fff;
   font-size: large;
-  padding: 2rem;
-  height: 250px;
   width: 120px;
   display: flex;
   justify-content: center;
@@ -257,6 +271,7 @@ a {
   text-align: center;
   justify-content: space-around;
   display: flex;
+  text-decoration: none;
 }
 
 .shop__h1 {
@@ -821,3 +836,26 @@ a {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px,-6px);
 }
+
+/* Loader */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: auto;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
