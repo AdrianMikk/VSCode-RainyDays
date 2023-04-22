@@ -49,4 +49,3 @@ async function main() {
 
 main();
 
-// {/* <h2 style="margin-bottom: -70px">Sum-ting Featured</h2> */}
