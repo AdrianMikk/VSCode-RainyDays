@@ -4,18 +4,18 @@
 
 Rainy Days is a website for rain jackets that I made for my Cross Course Project at Noroff University.
 
-## Description
+# Description
 
 First website I've ever made with HTML & CSS.
 
-## Built With 
+# Built With 
 
 - HTML 
 - CSS
 - JavaScript
 - Wordpress
 
-## Getting Started
+# Getting Started
 
 ### Executing program
 
@@ -23,12 +23,12 @@ https://courageous-gelato-250ccd.netlify.app/
 
 https://www.figma.com/file/hpQBMiV05wTMA6Pp6XXN11/2022-09-24_design1_CA_Adrian-mikkelsen-johannessen_fp?node-id=27%3A3
 
-## Contact 
+# Contact 
 
 - Email: adrianjohannessen5@gmail.com
 - GitHub: AdrianMikk
 
-## Acknowledgments 
+# Acknowledgments 
 
 Hello.
 
