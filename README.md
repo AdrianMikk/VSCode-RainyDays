@@ -27,8 +27,8 @@ https://www.figma.com/file/hpQBMiV05wTMA6Pp6XXN11/2022-09-24_design1_CA_Adrian-m
 
 ## Contact 
 
-Email: adrianjohannessen5@gmail.com
-GitHub: AdrianMikk
+- Email: adrianjohannessen5@gmail.com
+- GitHub: AdrianMikk
 
 ## Acknowledgments 
 
