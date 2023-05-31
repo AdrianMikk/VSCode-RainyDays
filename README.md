@@ -2,6 +2,9 @@
 
 2022_CA_AdrianMikkelsen_RainyDays
 
+![rainydays](https://github.com/AdrianMikk/VSCode-RainyDays/assets/113434165/4375ec68-77e5-46a2-93a8-824c4781f74f)
+
+
 ## Description
 
 A website made for Rain Jackets.
