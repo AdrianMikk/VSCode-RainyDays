@@ -27,6 +27,7 @@ First website I've ever made with HTML & CSS.
 
 - Email: adrianjohannessen5@gmail.com
 - GitHub: AdrianMikk
+- Discord: HoiskyPoisky#0358
 
 # Acknowledgments 
 
