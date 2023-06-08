@@ -19,9 +19,9 @@ First website I've ever made with HTML & CSS.
 
 ### Executing program
 
-https://courageous-gelato-250ccd.netlify.app/
+* [Website](https://courageous-gelato-250ccd.netlify.app/)
 
-https://www.figma.com/file/hpQBMiV05wTMA6Pp6XXN11/2022-09-24_design1_CA_Adrian-mikkelsen-johannessen_fp?node-id=27%3A3
+* [Figma](https://www.figma.com/file/hpQBMiV05wTMA6Pp6XXN11/2022-09-24_design1_CA_Adrian-mikkelsen-johannessen_fp?node-id=27%3A3)
 
 # Contact 
 
@@ -30,6 +30,6 @@ https://www.figma.com/file/hpQBMiV05wTMA6Pp6XXN11/2022-09-24_design1_CA_Adrian-m
 
 # Acknowledgments 
 
-Hello.
+I want to thank Hans Marius Andreassen for always being helpful and there to chat. And also I want to thank classmates for their inputs and tips.
 
 
